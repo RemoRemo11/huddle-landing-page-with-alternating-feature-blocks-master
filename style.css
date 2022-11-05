@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	text-align: center;
+    background-image: url(images/bg-hero-mobile.svg);
+    background-color: hsl(193, 100%, 96%);
+    background-repeat: no-repeat;
+}
+header .head-container {
+    padding: 20px;
+}
+header .logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .logo > img {
+	width: 35%;
+}
+header .logo a {
+	text-decoration: none;
+	color: hsl(192, 100%, 9%);
+	padding: 6px 25px;
+	background-color: white;
+	border-radius: 50px;
+	box-shadow: 0px 2px 10px -7px hsl(208, 11%, 55%);
+    font-weight: 700;
+}
+header .cont {
+    padding: 80px 18px;
+}
+
+header .cont > .img img {
+	max-width: 100%;
+}
+header .cont .text {
+	margin-bottom: 80px;
+}
+header .cont h1 {
+	font-size: 23px;
+}
+
+h1, h2, h3, h4 {
+    color: hsl(192, 100%, 9%);
+    font-family: Poppins;
+}
+header .cont p {
+	padding: 30px 0;
+}
+header .cont a, .get {
+    padding: 16px 60px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 2.1rem;
+    color: white;
+    box-shadow: 0px 2px 3px -1px white;
+    display: block;
+    width: max-content;
+    margin: auto;
+
+}
+header .cont a:hover, .get:hover  {
+    background-color: hsla(322, 100%, 66%, 0.822);
+}
+
+@media (min-width: 991px) {
+    header {
+        background-image: url(images/bg-hero-desktop.svg);
+        text-align: unset;
+    }
+    header .head-container {
+        padding: 50px 80px 70px;
+        max-width: 1440px;
+    }
+    header .logo > img {
+        width: 220px;
+    }
+    header .logo a {
+        font-size: 18px;
+        padding: 15px 60px;
+        
+    }
+    header .cont h1 {
+        font-size: 2.5rem;
+        font-family: Poppins;
+        margin-bottom: 40px;
+    }
+    header .cont {
+        display: flex;
+        gap: 5%;
+        align-items: center;
+        padding: 55px 0;
+    }
+    header .cont .text {
+        flex-basis: 60%;
+        margin-bottom: 0;
+    }
+
+    header .cont p {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    header .cont a, .get {
+        margin: unset;
+    }
+}
+
+
+main {
+	padding: 20px;
+}
+main article {
+    box-shadow: 0 0 6px 1px rgba(128, 141, 153, 0.342);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+main article img {
+	max-width: 100%;
+    padding: 20px;
+}
+
+
+main .flowing .art-cont {
+	margin-top: 20px;
+}
+main article .art-cont p {
+	margin-top: 20px;
+	color: hsl(208, 11%, 55%);
+    font-size: 18px;
+}
+main .flowing .art-cont {}
+
+main .flowing .img img {}
+
+
+
+.floating {
+    width: fit-content;
+    margin: 100px auto 0;
+	box-shadow: 0 0 6px 1px rgb(128 141 153 / 34%);
+	text-align: center;
+    padding: 40px 25px;
+    border-radius: 10px;
+    position: relative;
+    top:35px;
+    background-color: white;
+}
+
+.floating h3 {}
+
+.floating a {
+	width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+
+@media (min-width: 991px) {
+    main {
+        padding: 20px;
+        display: grid;
+        place-content: center;
+        text-align: unset;
+        margin-top: 130px;
+    }
+    main article {
+        max-width: 1240px;
+        display: flex;
+        gap: 10%;
+        text-align: unset;
+        padding-left: 110px;
+        align-items: center;
+    }
+    main .grow, main .your {
+        flex-direction: row-reverse;
+    }
+    main article .art-cont {
+        flex-basis: 48%;
+    }
+    main article .img {
+        flex-basis: 50%;
+    }
+
+    .floating {
+        padding: 70px 140px;
+        position: relative;
+        top: 100px;
+        margin: 50px auto 0
+    }
+
+    .floating h3 {
+        font-size: 2rem;
+        margin-bottom: 65px;
+    }
+    .floating a {
+        box-shadow: 0px 5px 15px -5px hsl(208, 11%, 55%);
+        font-size: 18px;
+        padding: 25px 100px;
+        font-weight: 700;
+    }
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(208, 11%, 55%);
+}
+
+footer .footer-container {
+    padding: 130px 20px 20px;
+}
+
+footer .footer-container > img {
+    width: 35%;
+    color: white;
+}
+footer .container {}
+footer .huddle {}
+
+footer .huddle ul {}
+footer .huddle ul li {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+	align-items: baseline;
+    margin-top: 20px;
+}
+footer .huddle ul li i {}
+footer .huddle ul li p {}
+footer .links {
+	margin-top: 40px;
+}
+footer .links .group {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+footer .links .group a {
+	text-decoration: none;
+	color: hsl(208, 11%, 55%);
+}
+footer .links .group a:hover {}
+footer .links .group-s {
+    margin-top: 20px;
+}
+footer .links .group-s a {}
+footer .socials {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    margin-top: 60px;
+}
+footer .socials i {
+	border: 1px solid hsl(208, 11%, 55%);
+	border-radius: 50%;
+	padding: 5px;
+	width: 25px;
+	margin-left: 5px;
+}
+footer .socials i:hover {}
+footer .container .socials span {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+@media (min-width: 991px) {
+    footer {
+        padding: 180px 20px 60px;
+    }
+    footer .footer-container {
+        max-width: 1220px;
+        margin: auto;
+        position: relative;
+        padding: unset;
+    }
+    footer .container {
+        display: flex;
+        gap: 10%;
+        align-items: baseline;
+    }
+    footer .huddle {
+        flex-basis: 37%;
+    }
+    footer .huddle ul li i {
+        color: white;
+    }
+    footer .links {
+        display: flex;
+        gap: 99px;
+        flex-basis: 25%;
+        margin: unset;
+    }
+    footer .links .group a:hover {
+        text-decoration: underline;
+    }
+    footer .links .group-s {
+        margin-top: unset;
+    }
+    footer .socials {
+        margin: 0;
+    }
+    footer .socials i:hover {
+        color: hsl(322, 100%, 66%);
+        border-color: hsl(322, 100%, 66%);
+        cursor: pointer;
+    }
+    footer .footer-container > img {
+        width: 220px;
+        color: white;
+    }
+    footer .container .socials span {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+    }
+
+}
